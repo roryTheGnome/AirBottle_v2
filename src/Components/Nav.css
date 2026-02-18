@@ -1,0 +1,44 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background: rgba(17, 17, 17, 0.5);
+    color: white;
+}
+
+.nav-logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none; /*STOP DELETING THIS keep it*/
+    color: white;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+.nav-btn {
+    background: white;
+    color: #111;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background: #ddd;
+}

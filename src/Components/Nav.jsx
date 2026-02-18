@@ -1,0 +1,18 @@
+import React from "react";
+import "./Nav.css";
+
+export default function Nav() {
+    return (
+        <nav className="nav">
+            <div className="nav-logo">AirBotttle</div>
+
+            <ul className="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Products</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+
+            {/*HERE COMES THE LANG TOGGLE*/}
+        </nav>
+    );
+}
