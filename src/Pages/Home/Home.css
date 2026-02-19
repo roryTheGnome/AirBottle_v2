@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 80vh;
-    background-color: #91c0f1;
+    min-height: 90vh;
+    background-color: rgba(145, 192, 241, 0.14);
 }
 
 .home-left {
@@ -13,7 +13,7 @@
 
 .title {
     font-family: 'Fredoka',sans-serif;
-    color: #fff4e4;
+    color: rgba(39, 28, 20, 0.64);
     font-size: 3rem;
     margin-bottom: 10px;
 }
