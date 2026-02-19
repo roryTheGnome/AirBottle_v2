@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
 
             <div className="footer-bottom">
-                © {new Date().getFullYear()} AirBottle -- All rights reserved
+                © {new Date().getFullYear()} AirBottle — All rights reserved
             </div>
         </footer>
     );

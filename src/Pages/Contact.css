@@ -1,0 +1,78 @@
+
+.contact {
+    padding: 80px 10%;
+    background-color: rgba(145, 192, 241, 0.14);
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.info {
+    max-width: 500px;
+}
+
+.contact-title {
+    font-size: 2em;
+    font-weight: bolder;
+    color: rgba(39, 28, 20, 0.8);
+    font-family: "JetBrains Mono ExtraBold",sans-serif;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+}
+
+.contact-subtitle {
+    font-size: 16px;
+    color: rgba(39, 28, 20, 0.64);
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    margin-bottom: 30px;
+}
+
+.contact-item h4 {
+    font-size: 18px;
+    color: rgba(39, 28, 20, 0.8);
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: rgba(39, 28, 20, 0.64);
+    margin-bottom: 5px;
+}
+
+.contact-item a {
+    font-size: 14px;
+    color: rgba(39, 28, 20, 0.8);
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    opacity: 0.7;
+}
+
+.office {
+    margin-bottom: 35px;
+    margin-top: 15px;
+}
+
+.contact-foto img{
+    border-radius: 25%;
+    object-fit: cover;
+}
+
+/*handle mpbile later*/
+@media (max-width: 900px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-image {
+        margin-top: 40px;
+    }
+}
