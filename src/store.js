@@ -1,9 +1,11 @@
 import {configureStore} from "@reduxjs/toolkit";
 import {setupListeners} from "@reduxjs/toolkit/query";
 import {ProductsApi} from "./ProductsApi"
+import langSlice from "./langSlice";
 
 export const store= configureStore({
     reducer:{
+        lang: langSlice,
         [ProductsApi.reducerPath]: ProductsApi.reducer, //so it will auto generates, yey
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(ProductsApi.middleware),
