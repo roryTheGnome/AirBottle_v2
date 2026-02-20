@@ -1,8 +1,8 @@
 import App from './App.jsx'
 import React from "react";
 import {createBrowserRouter} from "react-router-dom";
-import Home from "./Pages/Home/Home";
-import Contact from "./Pages/Contact";
+import Home from "./Pages/HomePage/Home";
+import Contact from "./Pages/ContactPage/Contact";
 
 export const router=createBrowserRouter([
     {

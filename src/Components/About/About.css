@@ -1,0 +1,51 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+    background: linear-gradient(
+            to bottom,
+            rgba(145, 192, 241, 0.14),
+            rgba(243, 182, 153, 0.06)
+    );
+}
+
+.about-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25%;
+}
+
+.about-right {
+    flex: 1;
+    padding: 0 40px;
+}
+
+.about-title {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.5rem;
+    color: rgba(39, 28, 20, 0.64);
+    margin-bottom: 15px;
+}
+
+.quote {
+    font-family: "Alumni",sans-serif;
+    color: #47a9ef;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+.about-text {
+    font-family: 'Alumni', sans-serif;
+    font-size: 1.3rem;
+    color: #9a8d88;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}

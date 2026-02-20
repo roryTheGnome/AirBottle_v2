@@ -12,11 +12,10 @@ export default function Footer() {
 
                 <div>
                     <h3>Contact</h3>
-
                     <h4>Mail</h4>
-                    <p>mail@mail.com</p>
+                    <a href="mailto:example@somemail.com">example@somemail.com</a>
                     <h4>Phone</h4>
-                    <p>+0 000 00 00</p>
+                    <a href="tel:+0000000000">+0 (000) 000 000</a>
                 </div>
 
                 <div>

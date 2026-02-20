@@ -33,6 +33,7 @@
 
 .nav-links a:hover {
     opacity: 0.7;
+    color: lightskyblue;
 }
 
 .nav-btn {

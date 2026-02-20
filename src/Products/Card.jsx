@@ -6,8 +6,8 @@ function Card(props){
     const getQuality= ()=>{
         const quality= Number(props.aquality);
 
-        if(quality==3)return 'low-quality';
-        if(quality==4)return 'mid-quality';
+        if(quality===3)return 'low-quality';
+        if(quality===4)return 'mid-quality';
         return 'high-quality';
     }
 
