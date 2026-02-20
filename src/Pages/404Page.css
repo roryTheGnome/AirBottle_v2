@@ -1,0 +1,44 @@
+.pnf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: linear-gradient(
+            to bottom,
+            rgba(39, 28, 20, 0.64),
+            rgba(145, 192, 241, 0.14),
+            rgba(39, 28, 20, 0.64)
+    );
+}
+
+.pnf-title {
+    letter-spacing: 1.2px;
+    font-size: 5rem;
+    margin: 15px;
+    font-family: 'Fredoka', sans-serif;
+    color: #605755;
+}
+.pnf-subtitle {
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    font-family: 'Fredoka', sans-serif;
+    color: #605755;
+}
+
+.upsiButton{
+
+    font-size: 1.5em;
+    font-family: 'JetBrains Mono ExtraBold', sans-serif;
+    font-weight: bolder;
+    color: rgba(6, 112, 220, 0.76);
+    padding: 5px;
+
+    border-style: solid;
+    border-color: #333333;
+    box-shadow: 0 20px 40px rgba(17, 24, 60, 0.13);
+    border-radius: 1000px;
+
+    background-color: rgba(239, 246, 250, 0.73);
+}
