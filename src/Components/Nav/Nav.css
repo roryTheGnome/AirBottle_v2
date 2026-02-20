@@ -48,3 +48,56 @@
 .nav-btn:hover {
     background: #ddd;
 }
+
+
+.lang {
+    position: relative;
+}
+
+.lang-button {
+    background: rgba(90, 158, 230, 0.49);
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s ease;
+    font-family: Fredoka,sans-serif;
+}
+
+.lang-button:hover {
+    opacity: 0.8;
+}
+
+.lang-menu {
+    position: absolute;
+    right: 0;
+    margin-top: 8px;
+    list-style: none;
+    background: white;
+    border-radius: 8px;
+    padding: 6px 0;
+    min-width: 140px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    z-index: 100;
+}
+
+.lang-item {
+    color:#605755;
+    padding: 10px 14px;
+    font-family: "JetBrains Mono ExtraBold",sans-serif;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.lang-item:hover {
+    background: #f3f4f6;
+}
+
+.lang-item.a {
+    font-weight: 600;
+    background: #e5f3ff;
+    color: #2563eb;
+}

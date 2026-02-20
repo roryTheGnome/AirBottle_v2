@@ -1,0 +1,17 @@
+{
+  "brand": {
+    "slog": "...gdzie czystość spotyka się z odpowiedzialnością"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "mail": "E-mail",
+    "phone": "Telefon"
+  },
+  "links": {
+    "title": "Linki",
+    "home": "Strona główna",
+    "products": "Produkty",
+    "contact": "Kontakt"
+  },
+  "bottom": "Wszelkie prawa zastrzeżone"
+}

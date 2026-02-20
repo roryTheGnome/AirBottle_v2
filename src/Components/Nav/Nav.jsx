@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import {useDispatch, useSelector} from "react-redux";
@@ -10,10 +10,20 @@ export default function Nav() {
     const {t}=useTranslation();
     const dispatch=useDispatch();
     const currentLang=useSelector((state)=>state.lang.value);
-    const toggleLang=()=>{
-        dispatch(setLang(currentLang==="en"?"de": "en"))
-    };
 
+    const [open,setOpen]=useState(false);
+    const langs = [
+        { code: "en", label: "English" },
+        { code: "de", label: "Deutsch" },
+        { code: "pl", label: "Polski" },
+        { code: "be", label: "Беларуская" },
+        { code: "uk", label: "Українська" },
+        { code: "ru", label: "Русский" },
+    ];
+    const handleLang=(lang)=>{
+        dispatch(setLang(lang));
+        setOpen(false);
+    }
 
     return (
         <nav className="nav">
@@ -25,9 +35,20 @@ export default function Nav() {
                 <li><Link to="/contact">{t("contact")}</Link></li>
             </ul>
 
-            <button className="lang-button" onClick={toggleLang}>
-                {currentLang==="en"?"DE": "EN"}
-            </button>
+            <div className="lang">
+                <button className="lang-button" onClick={()=>setOpen(!open)}>
+                    {currentLang.toUpperCase()}
+                </button>
+                {open &&(
+                    <ul className="lang-menu">
+                        {langs.map((lang)=>
+                        <li key={lang.code} className={`lang-item ${currentLang===lang.code? "a":"na"}`}
+                        onClick={()=>handleLang(lang.code)}>
+                            {lang.label}
+                        </li>)}
+                    </ul>
+                )}
+            </div>
         </nav>
     );
 }

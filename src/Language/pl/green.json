@@ -1,0 +1,18 @@
+{
+  "title": "Zrównoważony rozwój w centrum uwagi",
+  "intro": "Wierzymy, że czyste powietrze i czysta planeta idą w parze. Nasza ekologiczna filozofia wpływa na każdą podejmowaną przez nas decyzję.",
+  "cards": [
+    {
+      "title": "Ekologiczne materiały",
+      "text": "Odpowiedzialnie pozyskiwane i nadające się do recyklingu komponenty."
+    },
+    {
+      "title": "Energooszczędność",
+      "text": "Zaprojektowane, aby minimalizować zużycie energii i ilość odpadów."
+    },
+    {
+      "title": "Niska emisja",
+      "text": "Czystsza produkcja dla zdrowszej przyszłości."
+    }
+  ]
+}
