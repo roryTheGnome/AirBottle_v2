@@ -15,7 +15,7 @@ function Home() {
                 </div>
 
                 <div className="home-right">
-                    <img src="https://picsum.photos/id/558/450/650"/>
+                    <img src="https://picsum.photos/id/558/450/650" fetchpriority="high"/>
                 </div>
             </section>
             {/*maybe i should carry these part to its own file?? or is this*/}

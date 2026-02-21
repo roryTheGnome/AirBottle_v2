@@ -10,7 +10,7 @@ function About() {
             <div className="about-left">
                 <img
                     src="https://picsum.photos/id/455/450/550"
-                    alt={t("imgAlt")}
+                    alt={t("imgAlt")} fetchpriority="high"
                 />
             </div>
 

@@ -43,7 +43,7 @@ function Contact(){
                 </div>
 
                 <div className="contact-foto">
-                    <img src="https://picsum.photos/id/377/400/450" alt={t("imageAlt")} />
+                    <img src="https://picsum.photos/id/377/400/450" alt={t("imageAlt")} fetchpriority="high" />
                 </div>
 
             </div>
