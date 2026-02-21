@@ -25,17 +25,40 @@ export default function Nav() {
         setOpen(false);
     }
 
+    const [menuOpen,setMenuOpen]=useState(false);
+
     return (
         <nav className="nav">
             <div className="nav-logo">AirWrapper</div>
 
-            <ul className="nav-links">
-                <li><Link to="/">{t("home")}</Link></li>
-                <li><Link to="/products">{t("products")}</Link></li>
-                <li><Link to="/contact">{t("contact")}</Link></li>
+            <div className={`burger ${menuOpen? "active":"not"}`} onClick={() => setMenuOpen(!menuOpen)}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul className={`nav-links ${menuOpen?"show" :""}`} >
+                <li><Link to="/" onClick={()=>setMenuOpen(false)}>{t("home")}</Link></li>
+                <li><Link to="/products" onClick={()=>setMenuOpen(false)}>{t("products")}</Link></li>
+                <li><Link to="/contact" onClick={()=>setMenuOpen(false)}>{t("contact")}</Link></li>
+
+                <div className="lang mobile-lang">
+                    <button className="lang-button" onClick={()=>setOpen(!open)}> {currentLang.toUpperCase()}</button>
+
+                    {open &&(
+                        <ul className="lang-menu">
+                            {langs.map((lang)=>
+                                <li key={lang.code} className={`lang-item ${currentLang===lang.code? "a":"na"}`}
+                                    onClick={()=>handleLang(lang.code)}>
+                                    {lang.label}
+                                </li>)}
+                        </ul>
+                    )}
+
+                </div>
             </ul>
 
-            <div className="lang">
+            <div className="lang desktop-lang">
                 <button className="lang-button" onClick={()=>setOpen(!open)}>
                     {currentLang.toUpperCase()}
                 </button>

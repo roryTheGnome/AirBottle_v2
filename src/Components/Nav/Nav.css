@@ -101,3 +101,53 @@
     background: #e5f3ff;
     color: #2563eb;
 }
+
+.burger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background-color: #dddddd;
+    transition: 0.3s;
+}
+
+@media (min-width: 771px) {
+    .mobile-lang {
+        display: none;
+    }
+}
+
+@media (max-width: 770px) {
+    .burger {
+        display: flex;
+    }
+
+
+    .nav-links{
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: rgba(60, 33, 17, 0.53);
+        flex-direction: column;
+        width: 100%; /*not sure about this one*/
+        padding:20px 0;
+        display: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .desktop-lang {
+        display: none;
+    }
+
+    .mobile-lang {
+        margin-top: 20px;
+    }
+}
