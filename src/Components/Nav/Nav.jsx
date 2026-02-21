@@ -16,8 +16,8 @@ export default function Nav() {
         { code: "en", label: "English" },
         { code: "de", label: "Deutsch" },
         { code: "pl", label: "Polski" },
-        { code: "be", label: "Беларуская" },
-        { code: "uk", label: "Українська" },
+        { code: "by", label: "Беларуская" },
+        { code: "ua", label: "Українська" },
         { code: "ru", label: "Русский" },
     ];
     const handleLang=(lang)=>{

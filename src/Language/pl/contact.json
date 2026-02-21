@@ -1,0 +1,23 @@
+{
+  "title": "Skontaktuj się z AirWrapper",
+  "subtitle": "Chcesz złożyć zamówienie? Daj nam znać",
+  "info": {
+    "email": {
+      "title": "E-mail",
+      "description": "Wyślij nam wiadomość"
+    },
+    "phone": {
+      "title": "Telefon",
+      "description": "Zadzwoń do nas"
+    },
+    "office": {
+      "title": "Biuro",
+      "directions": "Pokaż trasę →",
+      "locations": [
+        "123 Al. Main, Warszawa, Polska",
+        "45 Al. Main, Kraków, Polska"
+      ]
+    }
+  },
+  "imageAlt": "Przedstawiciel obsługi klienta"
+}

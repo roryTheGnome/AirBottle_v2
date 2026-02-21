@@ -13,5 +13,6 @@
     "products": "Products",
     "contact": "Contact"
   },
-  "bottom": "All rights reserved"
+  "bottom": "All rights reserved",
+  "imgAlt": "hero image"
 }
